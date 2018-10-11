@@ -1,0 +1,22 @@
+{
+  "name": "simple-sysinfo",
+  "version": "1.0.0",
+  "description": "Simple system info viewer",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/towsif031/simple-sysinfo.git"
+  },
+  "author": "Towsif Ahmed Omi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/towsif031/simple-sysinfo/issues"
+  },
+  "homepage": "https://github.com/towsif031/simple-sysinfo#readme",
+  "dependencies": {
+    "electron": "^3.0.4"
+  }
+}
