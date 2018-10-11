@@ -6,9 +6,27 @@
         <link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.min.css">
     </head>
     <body>
-        <h1>My App</h1>
+        <div class="container">
+            <h2><center>Simple Sysinfo</center></h2>
+            <div id="output"></div>
+        </div>
     </body>
     <script>
+        console.log(process);
+        let output = `
+            <h6 class="page-header">App Version Data</h6>
+            <ul class="list-group">
+                <li class="list-group-item">Node: ${process.versions.node}</li>
+                <li class="list-group-item">Chrome: ${process.versions.chrome}</li>
+            </ul>
+            &nbsp;
+            <h6 class="page-header">System Specification</h6>
+            <ul class="list-group">
+                <li class="list-group-item">System Architecture: ${process.arch}</li>
+                <li class="list-group-item">Processor Indetifier: ${process.env.PROCESSOR_IDENTIFIER}</li>
+            </ul>
+        `
+        document.getElementById('output').innerHTML = output;
         require('./renderer.js');
     </script>
 </html>
