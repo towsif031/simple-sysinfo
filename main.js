@@ -7,7 +7,7 @@ let win;
 
 function createwindow(){
     // Create browser window
-    win = new BrowserWindow({width:800, height:600, icon:__dirname+'/img/simple-sysinfo-icon.png'});
+    win = new BrowserWindow({width:400, height:600, icon:__dirname+'/img/simple-sysinfo-icon.png'});
 
     // Load index.html
     win.loadURL(url.format({
