@@ -16,12 +16,12 @@ function createwindow(){
         slashes: true
     }))
 
-    // Open devtools
-    win.webContents.openDevTools();
+    // // Open devtools
+    // win.webContents.openDevTools();
 
-    win.on('closed', () => {
-        win = null;
-    });
+    // win.on('closed', () => {
+    //     win = null;
+    // });
 }
 
 // Run create windows function
